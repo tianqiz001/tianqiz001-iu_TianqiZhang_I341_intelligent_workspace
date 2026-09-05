@@ -1,0 +1,14 @@
+Project Title: Interactive Happy Birthday Music Player
+
+1. Concept & Interaction:
+This project is an interactive musical micro: bit program that plays the "Happy Birthday" tune along with visual LED animations.
+Controls:
+  Button A: Starts looping the "Happy Birthday" melody and triggers the play sequence.
+  Button B: Acts as a stop control, resetting the play state (`is_playing = false`) and halting all active audio playback.
+System Logic:
+  On startup, a global variable `is_playing` is initialized to `false`.
+  The program breaks down the melody into 4 section functions (`happy birthday`, `happy birthday2`, `happy birthday3`, and `happy birthday4`), supported by foundational pitch helper functions.
+  When `is_playing` is true, the program sequentially executes each musical phrase.
+
+2. Files & Implementation:
+The full block-based code has been created in MakeCode and exported as a `.hex` file included in this directory.

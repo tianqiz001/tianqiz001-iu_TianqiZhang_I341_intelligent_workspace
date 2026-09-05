@@ -1,0 +1,12 @@
+Project Title: 20-Second Tilt Catch Game
+
+1. Game Concept:
+This is a 20-second time-limited reaction game built for Micro:bit. 
+Goal: The player controls a pixel LED (player) by tilting the Micro:bit to touch the target pixel (item) positioned at the center (x:2, y:2).
+Controls: 
+  Tilt Left / Tilt Right: Moves the player horizontally.
+  Logo Up / Logo Down: Moves the player vertically.
+Game Mechanics:
+  When the game starts, a score counter and a 20,000 ms countdown timer begin.
+  When 'player' touches 'item', the score increases by 1 point.
+  Upon touching, 'player' randomly teleports to one of the predefined edge coordinates (x, y chosen randomly from the array [0, 4]) to reset the movement distance.
